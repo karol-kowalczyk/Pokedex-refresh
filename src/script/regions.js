@@ -146,7 +146,7 @@ function singlePokemonTemplateKanto(i, number, name, typesStyle) {
         </div>
         <div class="pokemonId">#${i+1}</div>
     </div>
-        <img src="img/pokemon/${number}.png" alt="">
+        <img src="./src/img/pokemon/${number}.png" alt="">
         <div>${name}</div>      
     </div>
     `;
@@ -160,7 +160,7 @@ function loadMoreRegion() {
     let remainingPokemon = allRegionPokemonData.length - loadMorePokemon;
 
     if (remainingPokemon <= 0) {
-        console.log('Maximale Länge erreicht!');
+        // console.log('Maximale Länge erreicht!');
         return; 
     }
     if (remainingPokemon > 20) {

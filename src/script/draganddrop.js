@@ -46,7 +46,7 @@ function moveTo() {
         renderAllDraggedPokemon();
         save();
     } else {
-        alert(`Pokémon ${pokemonName} wurde bereits gefangen.`);
+        alert(`Pokémon ${pokemonName} has already been caught.`);
     }
 }
 
@@ -66,14 +66,14 @@ function renderAllDraggedPokemon() {
     const catchedInfo = document.getElementById('catch-me-info');
     if (allCatchedPokemon.length > 0) {
         catchedInfo.innerHTML = /* html */ `
-            <span class="catched"><img src="/src/img/pokeball.svg" alt="">Caught Pokemon: ${allCatchedPokemon.length}</span>
+            <span class="catched"><img src="./src/img/pokeball.svg" alt="">Caught Pokemon: ${allCatchedPokemon.length}</span>
             <div class="clear-catched-btn" onclick="clearCatchedPokemon()">Clear all</div>
         `;
     } else {
         catchedInfo.innerHTML = /* html */ `
         <div class="catch-me-empty">
             <span>Catch your favorite pokemon <br>with drag and drop!</span>
-            <img src="/src/img/pfeil.svg" alt="">
+            <img src="./src/img/pfeil.svg" alt="">
         </div>
         `;
     }

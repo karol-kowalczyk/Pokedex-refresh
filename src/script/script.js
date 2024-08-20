@@ -91,7 +91,7 @@ async function loadCompletePokemon() {
         progressBar.innerText = `${progressPercentage}%`;
     }
     progressBarNone.classList.add('d-none');
-    console.log('Alle Pokemon daten', allPokemonData);
+    // console.log('Alle Pokemon daten', allPokemonData);
 }
 
 /**
@@ -109,16 +109,19 @@ function startLoadCompletePokemon() {
  * @function
  */
 function renderAllPokemon() {
-    for (let k = nextPokemon; k < loadMorePokemon; k++) {
+    let endIndex = nextPokemon + loadMorePokemon;
+    for (let k = nextPokemon; k < endIndex && k < allPokemonData.length; k++) {
         let number = allPokemonData[k]['data']['id'];
         let name = allPokemonData[k]['name'];
         let typesStyle = allPokemonData[k]['data']['types'][0]['type']['name'] + '-border';
 
         document.getElementById('pokedex').innerHTML += singlePokemonTemplate(k, number, name, typesStyle);
     }
+    nextPokemon = endIndex; 
     stopScroll = false;
     disableLoadingScreen();
 }
+
 
 /**
  * Creates HTML for a single Pokemon card.
@@ -188,12 +191,12 @@ function pokemonPopup(i) {
             <img src="${allPokemonData[i]['data']['sprites']['other']['official-artwork']['front_default']}" alt="${name}">
             <div class="pokemon-info-card">
                 <menu>
-                    <div class="pokemon-left" onclick="pokemonPopup(${i - 1})"><img id="arrowLeft" src="/src/img/navigate-left.svg"></div>
+                    <div class="pokemon-left" onclick="pokemonPopup(${i - 1})"><img id="arrowLeft" src="./src/img/navigate-left.svg"></div>
                     <div class="menu">
                         <div class="menu-start" href="" onclick="loadBaseStats(${i})">Base Stats</div>
                         <div class="menu-end" href="" id="test" onclick="loadAbout(${i})">About</div>
                     </div>
-                    <div class="pokemon-right" onclick="pokemonPopup(${i + 1})"><img src="/src/img/navigate.svg"></div>
+                    <div class="pokemon-right" onclick="pokemonPopup(${i + 1})"><img src="./src/img/navigate.svg"></div>
                 </menu>
                 <div id="about"></div>
             </div>
@@ -265,7 +268,7 @@ function loadBaseStats(i) {
 function changeArrowLeft(i) {
     let pokemonArrowSrc = document.getElementById('arrowLeft');
     if (i == 1) {
-        pokemonArrowSrc.src = '/src/img/navigate-left-end.svg';
+        pokemonArrowSrc.src = './src/img/navigate-left-end.svg';
     }
 }
 
@@ -358,21 +361,21 @@ function notClose(event) {
  * @function
  */
 function loadMore() {
-    let remainingPokemon = allPokemonData.length - loadMorePokemon;
+    let remainingPokemon = allPokemonData.length - nextPokemon;
 
     if (remainingPokemon <= 0) {
-        console.log('Maximale Länge erreicht!');
+        // console.log('Maximale Länge erreicht!');
         return;
     }
     if (remainingPokemon > 20) {
-        loadMorePokemon += 20;
-        nextPokemon += 20;
-        renderAllPokemon();
+        loadMorePokemon = 20;
     } else {
-        loadMorePokemon = allPokemonData.length;
-        renderAllPokemon();
+        loadMorePokemon = remainingPokemon;
     }
+
+    renderAllPokemon();
 }
+
 
 /**
  * Listens for scroll events to load more Pokemon when scrolling down.
@@ -382,7 +385,7 @@ window.addEventListener('scroll', () => {
     if (document.getElementById('load-more-function')) {
         if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 200) {
             loadMore();
-            console.log('geht nicht');
+            // console.log('geht nicht');
         }
     }
 });
