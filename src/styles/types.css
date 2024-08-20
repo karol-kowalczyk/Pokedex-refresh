@@ -1,0 +1,427 @@
+.type {
+    padding: 6px;
+    color: white;
+    background-color: rgb(48, 48, 48);
+    border-radius: 6px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.grass {
+    padding: 6px;
+    color: white;
+    background-color: #9bcc51;
+    border-radius: 6px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.grass-border {
+    border-top: 2px solid #9bcc51;
+    border-bottom: 2px solid #9bcc51;
+}
+
+.grass-border:hover {
+    background-color: #9bcc515b;
+}
+
+.fire {
+    padding: 6px;
+    color: white;
+    background-color: #fd7e24;
+    border-radius: 6px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.fire-border {
+    border-top: 2px solid #fd7e24;
+    border-bottom: 2px solid #fd7e24;
+}
+
+.fire-border:hover {
+    background-color: #fd7e245b;
+}
+
+.water {
+    padding: 6px;
+    color: white;
+    background-color: #4592c4;
+    border-radius: 6px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.water-border {
+    border-top: 2px solid #4592c4;
+    border-bottom: 2px solid #4592c4;
+}
+
+.water-border:hover {
+    background-color: #4592c45b;
+}
+
+.bug {
+    padding: 6px;
+    color: white;
+    background-color: #729f3f;
+    border-radius: 6px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.bug-border {
+    border-top: 2px solid #729f3f;
+    border-bottom: 2px solid #729f3f;
+}
+
+.bug-border:hover {
+    background-color: #729f3f5b;
+}
+
+.poison {
+    padding: 6px;
+    color: white;
+    background-color: #b97fc9;
+    border-radius: 6px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.poison-border {
+    border-top: 2px solid #b97fc9;
+    border-bottom: 2px solid #b97fc9;
+}
+
+.poison-border:hover {
+    background-color: #b97fc95b;
+}
+
+.flying {
+    padding: 6px;
+    color: white;
+    background-color: #3ec8ef;
+    border-radius: 6px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.flying-border {
+    border-top: 2px solid #3ec8ef;
+    border-bottom: 2px solid #3ec8ef;
+}
+
+.flying-border:hover {
+    background-color: #3ec8ef5b;
+}
+
+.normal {
+    padding: 6px;
+    color: white;
+    background-color: #a4acaf;
+    border-radius: 6px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.normal-border {
+    border-top: 2px solid #a4acaf;
+    border-bottom: 2px solid #a4acaf;
+}
+
+.normal-border:hover {
+    background-color: #a4acaf5b;
+}
+
+.electric {
+    padding: 6px;
+    color: white;
+    background-color: #eed536;
+    border-radius: 6px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.electric-border {
+    border-top: 2px solid #eed536;
+    border-bottom: 2px solid #eed536;
+}
+
+.electric-border:hover {
+    background-color: #eed5365b;
+}
+
+.fee {
+    padding: 6px;
+    color: white;
+    background-color: #fcb9e9;
+    border-radius: 6px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.fee-border {
+    border-top: 2px solid #fcb9e9;
+    border-bottom: 2px solid #fcb9e9;
+}
+
+.fee-border:hover {
+    background-color: #fcb9e95b;
+}
+
+.fight {
+    padding: 6px;
+    color: white;
+    background-color: #d56623;
+    border-radius: 6px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.fight-border {
+    border-top: 2px solid #d56623;
+    border-bottom: 2px solid #d56623;
+}
+
+.fight-border:hover {
+    background-color: #d566235b;
+}
+
+.psycho {
+    padding: 6px;
+    color: white;
+    background-color: #f366ba;
+    border-radius: 6px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.psycho-border {
+    border-top: 2px solid #f366ba;
+    border-bottom: 2px solid #f366ba;
+}
+
+.psycho-border:hover {
+    background-color: #f366ba5b;
+}
+
+.stone {
+    padding: 6px;
+    color: white;
+    background-color: #a38d21;
+    border-radius: 6px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.stone-border {
+    border-top: 2px solid #a38d21;
+    border-bottom: 2px solid #a38d21;
+}
+
+.stone-border:hover {
+    background-color: #a38d215b;
+}
+
+.steel {
+    padding: 6px;
+    color: white;
+    background-color: #9eb6b7;
+    border-radius: 6px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.steel-border {
+    border-top: 2px solid #9eb6b7;
+    border-bottom: 2px solid #9eb6b7;
+}
+
+.steel-border:hover {
+    background-color: #9eb6b75b;
+}
+
+.ice {
+    padding: 6px;
+    color: white;
+    background-color: #51c4e7;
+    border-radius: 6px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.ice-border {
+    border-top: 2px solid #51c4e7;
+    border-bottom: 2px solid #51c4e7;
+}
+
+.ice-border:hover {
+    background-color: #51c4e75b;
+}
+
+.ghost {
+    padding: 6px;
+    color: white;
+    background-color: #7b62a3;
+    border-radius: 6px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.ghost-border {
+    border-top: 2px solid #7b62a3;
+    border-bottom: 2px solid #7b62a3;
+}
+
+.ghost-border:hover {
+    background-color: #7b62a35b;
+}
+
+.ground {
+    padding: 6px;
+    color: white;
+    background-color: #ab9842;
+    border-radius: 6px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.ground-border {
+    border-top: 2px solid #ab9842;
+    border-bottom: 2px solid #ab9842;
+}
+
+.ground-border:hover {
+    background-color: #ab98425b;
+}
+
+.fighting {
+    padding: 6px;
+    color: white;
+    background-color: #d56623;
+    border-radius: 6px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.fighting-border {
+    border-top: 2px solid #d56623;
+    border-bottom: 2px solid #d56623;
+}
+
+.fighting-border:hover {
+    background-color: #d566235b;
+}
+
+.psychic {
+    padding: 6px;
+    color: white;
+    background-color: #f365b9;
+    border-radius: 6px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.psychic-border {
+    border-top: 2px solid #f365b9;
+    border-bottom: 2px solid #f365b9;
+}
+
+.psychic-border:hover {
+    background-color: #f365b95b;
+}
+
+.fairy {
+    padding: 6px;
+    color: white;
+    background-color: #fcb9e9;
+    border-radius: 6px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.fairy-border {
+    border-top: 2px solid #fcb9e9;
+    border-bottom: 2px solid #fcb9e9;
+}
+
+.fairy-border:hover {
+    background-color: #fcb9e95b;
+}
+
+.rock {
+    padding: 6px;
+    color: white;
+    background-color: #757572;
+    border-radius: 6px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.rock-border {
+    border-top: 2px solid #757572;
+    border-bottom: 2px solid #757572;
+}
+
+.rock-border:hover {
+    background-color: #7575725b;
+}
+
+.dragon {
+    padding: 6px;
+    color: white;
+    background-color: #f16f57;
+    border-radius: 6px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.dragon-border {
+    border-top: 2px solid #f16f57;
+    border-bottom: 2px solid #f16f57;
+}
+
+.dragon-border:hover {
+    background-color: #f16f575b;
+}
+
+.dark {
+    padding: 6px;
+    color: white;
+    background-color: #4d4d4d;
+    border-radius: 6px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.dark-border {
+    border-top: 2px solid #4d4d4d;
+    border-bottom: 2px solid #4d4d4d;
+}
+
+.dark-border:hover {
+    background-color: #4d4d4d5b;
+}
